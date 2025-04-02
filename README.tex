@@ -1,0 +1,56 @@
+\documentclass{article}
+
+\usepackage{ctex}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[a4paper, scale=0.8]{geometry}
+
+\title{MTR CR 常用速度等级轨道扩展}
+\author{\href{https://github.com/lihugang/mtr-cr-speed-rails}{lihugang}}
+
+\begin{document}
+\maketitle
+
+本 MOD 为 \href{https://minecrafttransitrailway.com/}{Minecraft Transit Railway} 模组添加了中国铁路(CR)常用的线路速度等级的轨道扩展，包括：
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+        等级 & 备注 \\ \hline
+        $100 \textrm{km/h}$ & 客四标尺 \\ \hline
+        $140 \textrm{km/h}$ & 客二标尺 / 25K / 25Z 最高运行速度 \\ \hline
+        $170 \textrm{km/h}$ & DF11G型内燃机车最高速度 \\ \hline
+        $220 \textrm{km/h}$ & 62号高速侧向道岔限速 / CR220J 最高速度 \\ \hline
+        $250 \textrm{km/h}$ & 大部分 CRH 系动车组运营时速 / CR300 动车组运营时速 \\ \hline
+        $260 \textrm{km/h}$ & 沪宁城际常用限速 \\ \hline
+        $275 \textrm{km/h}$ & 沪宁城际常用限速 \\ \hline
+        $290 \textrm{km/h}$ & 沪宁城际常用限速 \\ \hline
+        $310 \textrm{km/h}$ & CRH380系 / CRH2C / CRH3C 动车组目前运营时速 \\ \hline
+        $350 \textrm{km/h}$ & CRH380系 / CRH2C / CRH3C 动车组降速前运营时速 / CR400系动车组目前运营时速 \\ \hline
+        $355 \textrm{km/h}$ & CR400系动车组 ATP 限速 \\ \hline
+        $380 \textrm{km/h}$ & CRH380系动车组设计时速 \\ \hline
+        $400 \textrm{km/h}$ & CR400系动车组设计时速 \\ \hline
+        $420 \textrm{km/h}$ & CRH380D 冲高时速 \\ \hline
+        $450 \textrm{km/h}$ & CR450 设计时速 \\ \hline
+        $486 \textrm{km/h}$ & CRH380AL-2541 冲高时速 \\ \hline
+        $500 \textrm{km/h}$ & CRH380AM-0204 设计最高时速 \\ \hline
+    \end{tabular}
+\end{table}
+\footnote{$80\textrm{km/h}$、$120\textrm{km/h}$、$160\textrm{km/h}$、$200\textrm{km/h}$ 在 Minecraft Transit Railway 模组本体中已有，不再添加。}
+
+这个 MOD 最初是作者为自己的服务器所制作的，顺手将源代码开源出来（部分代码是从 IDEA 对 Minecraft Transit Railway 模组的反编译结果中拷过来的，部分代码是 Forge 生成的 Template 没删干净的，部分代码是懒得启动 IDEA 或 VsCode 随手用记事本写的，这意味着代码的质量很差，如果你想维护这个项目，请做好心理准备）。由于作者学业繁忙和个人兴趣，作者并没有长久维护这个 MOD 的计划，如果有好心人愿意继续维护这个 MOD，欢迎发 Issue。
+
+目前仅支持 \textcolor{red}{Minecraft 1.20.1 版本、Mod 加载器为 Forge、MTR 版本为 4.0.0-beta13} 的游戏，理论上迁移到 Fabric / NeoForge 和其他版本的 Minecraft 和 MTR 是可行且较为轻松的，但作者并没有时间和精力去做这个工作，如果你想要其他版本的 MOD，可以在 Issue 中告诉作者（当然，有偿）。
+
+如果你想要更多速度等级的轨道，也可以发 Issue。
+
+当然，由于代码质量较差，本 MOD 存在部分 Bug，包括但不限于：
+
+\begin{itemize}
+    \item 250 km/h 轨道的贴图不透明（这主要是因为作者跑完 Texture Generator 后发现没有 250km/h 的贴图，而 Texture Generator 的代码又被误删了，于是作者直接打开画图进行编辑的）
+    \item 使用 MOD 自定义的轨道连接器时无法预览轨道信息
+    \item 使用 MOD 自定义的轨道连接器时无法显示连接状态（即右键一个节点后贴图不会变成带箭头的）
+    \item 连接后轨道会显示为黑色
+\end{itemize}
+\end{document}
