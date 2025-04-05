@@ -1,0 +1,12 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "top.lihugang.mc.mod.mtr_cr_speed_rails.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "mixins": [
+        "RailTypeMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

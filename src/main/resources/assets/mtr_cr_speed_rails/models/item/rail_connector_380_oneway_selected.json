@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "mtr_cr_speed_rails:item/rail_connector_380_oneway",
+        "layer1": "mtr:item/rail_connector_selected"
+    }
+}
