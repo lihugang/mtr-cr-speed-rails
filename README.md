@@ -1,6 +1,5 @@
 # MTR CR Speed Rails
 
-您可以查看 `README.pdf` 以获得更好的阅读体验。
+- - -
 
-![README.pdf-Page1](https://github.com/user-attachments/assets/36dbff3c-9918-439f-a11a-5ac05743e68e)
-![README.pdf-Page2](https://github.com/user-attachments/assets/e854ecb9-f5a2-47bd-836c-c13fafb26313)
+您当前查看的分支为适用于 MTR 4 Beta13, Minecraft 1.20.1, Forge 的分支。如果您想查看本项目的说明，请见根目录下的 `README.pdf`。如果您想要下载文件，请点击网页右侧的 Releases，选择您想要的版本下载。

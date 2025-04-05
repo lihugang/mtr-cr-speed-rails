@@ -11,6 +11,8 @@
 \begin{document}
 \maketitle
 
+\textcolor{red}{请注意！本 MOD 仍处于测试阶段，在进行游戏前请备份存档！}
+
 本 MOD 为 \href{https://minecrafttransitrailway.com/}{Minecraft Transit Railway} 模组添加了中国铁路(CR)常用的线路速度等级的轨道扩展，包括：
 
 \begin{table}[!ht]
@@ -41,7 +43,7 @@
 
 这个 MOD 最初是作者为自己的服务器所制作的，顺手将源代码开源出来（部分代码是从 IDEA 对 Minecraft Transit Railway 模组的反编译结果中拷过来的，部分代码是 Forge 生成的 Template 没删干净的，部分代码是懒得启动 IDEA 或 VsCode 随手用记事本写的，这意味着代码的质量很差，如果你想维护这个项目，请做好心理准备）。由于作者学业繁忙和个人兴趣，作者并没有长久维护这个 MOD 的计划，如果有好心人愿意继续维护这个 MOD，欢迎发 Issue。
 
-目前仅支持 \textcolor{red}{Minecraft 1.20.1 版本、Mod 加载器为 Forge、MTR 版本为 4.0.0-beta13} 的游戏，理论上迁移到 Fabric / NeoForge 和其他版本的 Minecraft 和 MTR 是可行且较为轻松的，但作者并没有时间和精力去做这个工作，如果你想要其他版本的 MOD，可以在 Issue 中告诉作者（当然，有偿）。
+目前支持的版本列表请见表 \ref{versionTable} ，理论上迁移到其他版本的 Minecraft 和 MTR 是可行且较为轻松的，但作者并没有时间和精力去做这个工作，如果你想要其他版本的 MOD，可以在 Issue 中告诉作者（当然，有偿）。
 
 如果你想要更多速度等级的轨道，也可以发 Issue。
 
@@ -49,8 +51,19 @@
 
 \begin{itemize}
     \item 250 km/h 轨道的贴图不透明（这主要是因为作者跑完 Texture Generator 后发现没有 250km/h 的贴图，而 Texture Generator 的代码又被误删了，于是作者直接打开画图进行编辑的）
-    \item 使用 MOD 自定义的轨道连接器时无法预览轨道信息
+    \item 使用 MOD 自定义的轨道连接器时无法预览轨道信息 (仅 MTR4)
     \item 使用 MOD 自定义的轨道连接器时无法显示连接状态（即右键一个节点后贴图不会变成带箭头的）
-    \item 连接后轨道会显示为黑色
+    \item 连接后轨道会显示为黑色 (仅 MTR4 - Forge - Minecraft 1.20.1 - Java17)
 \end{itemize}
+
+\begin{table}[!ht]
+    \centering
+    \label{versionTable}
+    \begin{tabular}{c|c|c|c}
+        \textbf{Minecraft 版本} & \textbf{MTR 版本} & \textbf{Mod 加载器} & \textbf{下载地址} \\ \hline
+        1.20.1 & 4.0.0-Beta13 & Forge & \href{https://github.com/lihugang/mtr-cr-speed-rails/releases/download/MTR4/MTR4.Beta13-Forge-1.20.1-Java17.jar}{MTR4.Beta13-Forge-1.20.1-Java17.jar} \\ 
+        1.18.2 & 3.2.2 & Fabric & \href{https://github.com/lihugang/mtr-cr-speed-rails/releases/download/MTR3.2.2/MTR3.2.2-Fabric-1.18.2-Java17.jar}{MTR3.2.2-Fabric-1.18.2-Java17.jar} \\ 
+    \end{tabular}
+    \caption{版本列表}
+\end{table}
 \end{document}
