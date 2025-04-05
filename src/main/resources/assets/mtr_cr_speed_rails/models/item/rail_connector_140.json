@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "mtr_cr_speed_rails:item/rail_connector_140"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "mtr:selected": 1
+            },
+            "model": "mtr_cr_speed_rails:item/rail_connector_140_selected"
+        }
+    ]
+}
